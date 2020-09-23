@@ -48,25 +48,24 @@ namespace myapp
             Console.Write("Andra mättalet:");
             int tal6= int.Parse(Console.ReadLine());
             Console.WriteLine("Ditt Elpris är:");
-            Console.Write(3*tal6-tal5+500);
+            Console.Write(3*(tal6-tal5)+500);
             Console.Write("Kr");
             break;
 
                 case 4:
-            Console.Write("Skriv Priset på din vara"); //Beräknar rabatt
+            Console.WriteLine("Skriv Priset på din vara i kronor"); //Beräknar rabatt
+            Console.WriteLine("Om din vara kostar 500kr så är det 10% rabatt annas är det 2%");
             Double tal7= Double.Parse(Console.ReadLine());
-           
-           
-            
+                                   
                 if(tal7>500)
-                    Console.WriteLine("10% rabatt"+ tal7*0.1);
+                    Console.WriteLine("10% rabatt: "+ tal7*0.1 + "kr");
                     
                 else
-                    Console.WriteLine("2% rabatt"+ tal7*0.02);
+                    Console.WriteLine("2% rabatt: "+ tal7*0.02 + "kr");
                     break;
-                       
+                
             
-
+            
             }            
         }
     }
